@@ -13,7 +13,6 @@ class HomeScreen extends StatelessWidget {
     final List<String> appBarList = [
       'Home',
       'About',
-      'Resume',
     ];
     final scrollController = ScrollController();
 
@@ -57,7 +56,7 @@ class HomeScreen extends StatelessWidget {
                     side: BorderSide(color: Colors.red)),
                 onPressed: () {
                   html.window.open(
-                      'https://drive.google.com/uc?export=view&id=1OOdcdGEN3thVvpZ4cl_MM0LT-GCMuLIE',
+                      'https://twitter.com/home',
                       "pdf");
                 },
                 child: Text(
