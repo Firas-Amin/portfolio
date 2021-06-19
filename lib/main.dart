@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: "Portfolio Firas Ameen",
       theme: ThemeData(
         primaryColor: Colors.blueAccent,
+        scaffoldBackgroundColor: Colors.blueAccent,
       ),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
