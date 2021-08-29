@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:universal_html/html.dart' as html;
 
-import 'EntranceFader.dart';
+import 'animations/EntranceFader.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key key}) : super(key: key);
 
@@ -18,7 +18,6 @@ class HomeScreen extends StatelessWidget {
 
 
     return Scaffold(
-      extendBodyBehindAppBar: true,
       floatingActionButton:FloatingActionButton(
         child: Icon(
           Icons.arrow_upward_sharp
@@ -34,10 +33,7 @@ class HomeScreen extends StatelessWidget {
           offset: Offset(0, -20),
           duration: Duration(seconds: 1),
           delay: Duration(seconds: 3),
-          child: Text("Firas Ameen",style:TextStyle(
-            fontFamily:'ViaodaLibre',
-            fontSize: 26.0,
-          ),
+          child: Image(
           ),
         ),
         actions: [
