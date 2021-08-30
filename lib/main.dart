@@ -12,10 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Portfolio Firas Ameen",
-      theme: ThemeData(
-        primaryColor: Colors.blueAccent,
-        scaffoldBackgroundColor: Colors.blueAccent,
-      ),
+      theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: HomeScreen(),
 
