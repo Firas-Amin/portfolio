@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/animations/EntranceFader.dart';
 
+import 'about.dart';
+
 class HomePage extends StatelessWidget {
 
 
@@ -69,11 +71,20 @@ class HomePage extends StatelessWidget {
                       label: Text('linkedin'),
                       onPressed: () => print("linkedin"),
                     ),
+                    FlatButton.icon(
+                      icon: SizedBox(
+                          width: 20,
+                          height: 20,
+                          child: Icon(Icons.mail)),
+                      label: Text('Mail'),
+                    ),
 
                   ],
                 ),
 
+
               ],
+
             ),
 
           ),

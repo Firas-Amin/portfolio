@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/desktop/HomePage.dart';
+import 'package:portfolio/desktop/about.dart';
 import 'package:universal_html/html.dart' as html;
 
 import 'animations/EntranceFader.dart';
+import 'desktop/ProjectPage.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key key}) : super(key: key);
 
@@ -20,19 +22,26 @@ class HomeScreen extends StatelessWidget {
 
 
     return Scaffold(
-      floatingActionButton:FloatingActionButton(
-        child: Icon(
-          Icons.arrow_upward_sharp
-        ),
-        onPressed: (){
-          scrollController.animateTo(0.0, duration:Duration(seconds: 1), curve: Curves.easeInOut);
-        },
-      ),
+      // floatingActionButton:FloatingActionButton(
+      //   child: Icon(
+      //     Icons.arrow_upward_sharp
+      //   ),
+      //   onPressed: (){
+      //     scrollController.animateTo(0.0, duration:Duration(seconds: 1), curve: Curves.easeInOut);
+      //   },
+      // ),
       appBar: deskTopAppBar(appBarList, context),
-      body: Stack(
+      body: ListView(
         children: [
           HomePage(),
-
+          SizedBox(
+            height: 500.0,
+          ),
+          AboutPage(),
+          SizedBox(
+            height: 50.0,
+          ),
+          ProjectPage(),
         ],
 
       ),
